@@ -46,8 +46,8 @@ def send_email_on_time(address_list):
         msg.attach(att)
 
         smtp = smtplib.SMTP()
-        smtp.connect('smtp.exmail.qq.com', '25')
-        smtp.login('huanglh@hst.com', 'Hlh121119.')
+        smtp.connect('smtp.exmail.qq.com', '***')
+        smtp.login('***@***.com', '***.')
         smtp.sendmail(msg['From'], msg['To'], msg.as_string())
 
 test = "test"
